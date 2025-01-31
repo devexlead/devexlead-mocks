@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.14.1/mockresponseplugin.schema.json",
+  "mocks": [
+    {
+      "request": {
+        "url": "https://devexlead.com/api/picture"
+      },
+      "response": {
+        "body": "@picture.jpg",
+        "headers": [
+          {
+            "name": "content-type",
+            "value": "image/jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "url": "https://devexlead.com/api/sprints",
+        "method": "GET"
+      },
+      "response": {
+        "body": "@response.json"
+      }
+    }
+  ]
+}
