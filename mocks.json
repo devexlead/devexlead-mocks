@@ -17,11 +17,17 @@
     },
     {
       "request": {
-        "url": "https://devexlead.com/api/sprints",
+        "url": "https://devexlead.com/api/v1/backlog",
         "method": "GET"
       },
       "response": {
-        "body": "@response.json"
+        "body": "@backlog.json",
+        "headers": [
+          {
+            "name": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
       }
     }
   ]
