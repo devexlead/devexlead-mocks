@@ -23,20 +23,24 @@
       "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
     },
     {
-        "name": "MarkdownReporter",
-        "enabled": true,
-        "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
+      "name": "MarkdownReporter",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
     },
     {
       "name": "MockResponsePlugin",
       "enabled": true,
       "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
       "configSection": "mocksPlugin"
+    },
+    {
+      "name": "LatencyPlugin",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+      "configSection": "latencyPlugin"
     }
   ],
-  "urlsToWatch": [
-    "https://devexlead.com/api/*"
-  ],
+  "urlsToWatch": ["https://devexlead.com/api/*"],
   "genericRandomErrorPlugin": {
     "errorsFile": "devproxy-errors.json"
   },
@@ -46,6 +50,6 @@
   "showSkipMessages": true,
   "showTimestamps": true,
   "mocksPlugin": {
-      "blockUnmockedRequests": true
-    }
+    "blockUnmockedRequests": true
+  }
 }
